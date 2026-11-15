@@ -1,0 +1,179 @@
+/* General Settings */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #fffaf0;
+	color: #333;
+}
+
+/* Header */
+header {
+	background: linear-gradient(to right, #ff9933, white, #138808);
+	text-align: center;
+	padding: 35px 15px;
+}
+
+header h1 {
+	font-size: 38px;
+	color: #222;
+	margin-bottom: 10px;
+}
+
+header p {
+	font-size: 18px;
+}
+
+/* Navigation */
+nav {
+	background-color: #183153;
+	padding: 15px;
+	text-align: center;
+}
+
+nav a {
+	color: white;
+	text-decoration: none;
+	margin: 0 20px;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: #ff9933;
+}
+
+/* Welcome Section */
+.welcome {
+	text-align: center;
+	padding: 70px 20px;
+	background: #ffe5b4;
+}
+
+.welcome h2 {
+	font-size: 32px;
+	color: #183153;
+	margin-bottom: 15px;
+}
+
+.welcome p {
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #ff6600;
+	color: white;
+	padding: 12px 25px;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.btn:hover {
+	background-color: #138808;
+}
+
+/* States Section */
+#states {
+	padding: 45px 20px;
+	text-align: center;
+}
+
+#states h2,
+#about h2 {
+	color: #183153;
+	margin-bottom: 25px;
+	font-size: 28px;
+}
+
+#search {
+	width: 80%;
+	max-width: 450px;
+	padding: 13px;
+	border: 2px solid #ff9933;
+	border-radius: 8px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+/* State Cards */
+#state-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 20px;
+	max-width: 1100px;
+	margin: auto;
+}
+
+.state-card {
+	background-color: white;
+	padding: 25px;
+	border-radius: 12px;
+	box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+	transition: transform 0.3s;
+}
+
+.state-card:hover {
+	transform: translateY(-6px);
+}
+
+.state-card h3 {
+	color: #e66b00;
+	margin-bottom: 12px;
+}
+
+.state-card p {
+	line-height: 1.6;
+}
+
+/* About Section */
+#about {
+	background-color: #e8f5e9;
+	text-align: center;
+	padding: 45px 20px;
+}
+
+#about p {
+	max-width: 700px;
+	margin: auto;
+	line-height: 1.7;
+}
+
+/* Footer */
+footer {
+	background-color: #183153;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Mobile Design */
+@media (max-width: 600px) {
+	header h1 {
+		font-size: 28px;
+	}
+
+	nav a {
+		margin: 0 8px;
+	}
+
+	.welcome h2 {
+		font-size: 25px;
+	}
+}
+
+.state-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
